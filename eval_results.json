@@ -1,0 +1,976 @@
+[
+  {
+    "id": "Q001",
+    "category": "正常",
+    "behavior": "作答",
+    "latency_s": 6.747,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 0.75,
+      "faithfulness": 0.6666666666666666,
+      "contextual_precision": 1.0
+    },
+    "passed": true,
+    "actual_output": "根据上下文信息，回答如下：\n\n1. **生成顺序**：先进行 STEP 3（角色卡），再进行 STEP 4（场景卡）。\n2. **场景卡内容限制**：场景卡中**不能**出现人物。它只能展示环境，严禁出现人物、人群、剪影、手、脸或角色客串。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q002",
+    "category": "正常",
+    "behavior": "作答",
+    "latency_s": 5.797,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "contextual_precision": 1.0
+    },
+    "passed": true,
+    "actual_output": "标准镜头信息表必须严格按以下顺序包含六列：\n\n1. **镜头编号 & 时长**\n2. **连续性衔接**\n3. **参考锚点（空间+身份）**\n4. **Hook 类型**\n5. **镜头描述（每秒指令）**\n6. **音频与对白轨**",
+    "run_idx": 0
+  },
+  {
+    "id": "Q003",
+    "category": "正常",
+    "behavior": "作答",
+    "latency_s": 0.651,
+    "retrieval_hit": 0.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 0.0,
+      "faithfulness": 1.0,
+      "contextual_precision": 0.5833333333333333
+    },
+    "passed": false,
+    "actual_output": "根据现有资料无法回答。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q004",
+    "category": "正常",
+    "behavior": "作答",
+    "latency_s": 0.611,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 0.0,
+      "faithfulness": 1.0,
+      "contextual_precision": 0
+    },
+    "passed": false,
+    "actual_output": "根据现有资料无法回答。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q005",
+    "category": "正常",
+    "behavior": "作答",
+    "latency_s": 11.079,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "model-selection.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "contextual_precision": 0.8333333333333333
+    },
+    "passed": true,
+    "actual_output": "3D动画短片默认使用 **H3** 模型；当需要高强度动画表演（如追逐、闹剧节拍或强调动画本身卖点的 climax 镜头）时，使用 **Seedance 2.0**。\n\n补充要点：\n1. **H3 适用场景**：最适合设计语言强的皮克斯 3D 动画短片、文字/字幕/UI 元素、动效转场及对话驱动且音频为交付物一部分的镜头。\n2. **Seedance 2.0 强项**：擅长电影感镜头、复杂运镜、皮克斯弹性表演和动作张力，是高强度动画表演的回退选项。\n3. **混合使用方式**：可通过在镜头表的 `镜头描述` 列添加 `video_model: H3` 或 `video_model: Seedance2` 字段来指定特定镜头使用的模型，未标记行默认走 H3。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q006",
+    "category": "正常",
+    "behavior": "作答",
+    "latency_s": 5.999,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 0.75,
+      "faithfulness": 1.0,
+      "contextual_precision": 1.0
+    },
+    "passed": true,
+    "actual_output": "核心结论：固定要求为 **15 秒** 时长、**16:9** 画幅。\n\n补充要点：\n1. 输出必须保留“15 秒、16:9”这一固定结构，确保生成的是手绘实拍融合成片。\n2. 该规格适用于单场景创意短片和手绘实拍融合视频，不适用于精致 CG、恐怖跳吓或多场景剪辑。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q007",
+    "category": "正常",
+    "behavior": "作答",
+    "latency_s": 4.139,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "meta.yaml"
+    ],
+    "metrics": {
+      "answer_relevancy": 0.6666666666666666,
+      "faithfulness": 1.0,
+      "contextual_precision": 1.0
+    },
+    "passed": true,
+    "actual_output": "在0-3秒内。\n\n*   平面手绘发光动画需在此时间段内与实拍手或物体明确接触。\n*   接触后作为同一个实体进行连续变形和逃跑，并由慢半拍的手持手机镜头追随。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q008",
+    "category": "正常",
+    "behavior": "作答",
+    "latency_s": 0.56,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "meta.yaml",
+      "h3-video-prompt-template.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 0.0,
+      "faithfulness": 1.0,
+      "contextual_precision": 0
+    },
+    "passed": false,
+    "actual_output": "根据现有资料无法回答",
+    "run_idx": 0
+  },
+  {
+    "id": "Q009",
+    "category": "正常",
+    "behavior": "作答",
+    "latency_s": 6.347,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "meta.yaml"
+    ],
+    "metrics": {
+      "answer_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "contextual_precision": 1.0
+    },
+    "passed": true,
+    "actual_output": "在生成最终视频之前，用户必须**确认由 Skill 生成的“首图”**（即包含人物、UI 和风格的确认画面）。\n\n补充要点：\n1. 该首图是基于固定菜单布局，将色彩、按钮、图标和字体与角色身份特征联动生成的。\n2. 只有当用户对这张首图的风格、人物和 UI 表示确认后，系统才会回填信息并生成最终的视频提示词及视频。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q010",
+    "category": "正常",
+    "behavior": "作答",
+    "latency_s": 12.122,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 0.8,
+      "faithfulness": 1.0,
+      "contextual_precision": 1.0
+    },
+    "passed": true,
+    "actual_output": "时长超过15秒的视频默认采用**“多分镜（Multi-Shot）拼接工作流”**。\n\n核心要点如下：\n1. **生成逻辑**：由于模型存在单次生成上限，系统会将长视频拆解为多个短动态分镜头（如30秒拆分为4~8个2~5秒片段），通过卡拍与首尾帧/场景连续性控制进行拼接合成。\n2. **权威来源**：必须以“全局多镜头分镜 Prompt 脚本”作为生成依据，输出画幅默认为16:9横版，单段时长约4秒。\n3. **默认配置**：视觉风格为高级编辑感半调纸拼贴，运动风格为触感停格组装；音频默认保留或生成触感纸拼贴音效（如纸片滑动、轻敲等），且不默认添加BGM、旁白或字幕。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q011",
+    "category": "正常",
+    "behavior": "作答",
+    "latency_s": 5.392,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 1.0,
+      "faithfulness": 0.6666666666666666,
+      "contextual_precision": 1.0
+    },
+    "passed": true,
+    "actual_output": "根据现有资料无法回答。\n\n**理由：**\n上下文仅详细列出了“五大衔接锁”中的前两项（人声与口型衔接锁、音乐与节奏衔接锁），并未提供其余三项的具体内容，因此无法完整列出全部五个衔接锁。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q012",
+    "category": "正常",
+    "behavior": "作答",
+    "latency_s": 7.032,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "contextual_precision": 0.5
+    },
+    "passed": true,
+    "actual_output": "MV 的剪辑风格对转场的硬性要求如下：\n\n1. **绝对只使用硬切（Hard Cut）**，严禁淡入淡出、溶解或柔和转场。\n2. 场景切换必须由明确的音乐冲击触发（如 bass hit、808 drop、snare、vocal 重音或文字砸屏）。\n3. 镜头切换需作为 trap beat 上的“视觉采样”，采用硬切、跳切、扫描 glitch 硬切、闪切或动作匹配切。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q013",
+    "category": "正常",
+    "behavior": "作答",
+    "latency_s": 6.003,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "contextual_precision": 1.0
+    },
+    "passed": true,
+    "actual_output": "默认画幅为 16:9 横版，单段时长约 4 秒。\n\n- **输出画幅**：16:9 横版（除非用户明确指定其他比例）。\n- **单段时长**：每段约 4 秒。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q014",
+    "category": "正常",
+    "behavior": "作答",
+    "latency_s": 7.948,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "contextual_precision": 1.0
+    },
+    "passed": true,
+    "actual_output": "纸拼贴讲解视频默认的音频策略是：**带触感纸拼贴音效，不添加 BGM、旁白口播和字幕**。\n\n具体要点如下：\n1. **保留音效**：默认生成或保留纸片滑动、弹入、压平轻敲、轻微摩擦等触感拼贴音效。\n2. **无背景音乐与人声**：除非用户明确要求，否则不添加 BGM 和旁白口播（即使内容属于科普/讲解类）。\n3. **无声视觉叙事**：若未选择旁白，应编写无声的视觉叙事节奏，而非旁白稿。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q015",
+    "category": "正常",
+    "behavior": "作答",
+    "latency_s": 3.016,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "contextual_precision": 0.3333333333333333
+    },
+    "passed": false,
+    "actual_output": "默认视频生成模型是 `MiniMax-H3`。\n\n*   除非用户明确指定其他模型，否则均使用该模型。\n*   若该模型不可用，或硬性能力要求排除它时，则不使用此默认模型。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q016",
+    "category": "正常",
+    "behavior": "作答",
+    "latency_s": 5.347,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 0.2,
+      "faithfulness": 1.0,
+      "contextual_precision": 0.3333333333333333
+    },
+    "passed": false,
+    "actual_output": "根据上下文，如果用户只想要「单图提示词」，应执行以下四个步骤：\n\n1. STEP 1\n2. STEP 2\n3. STEP 9\n4. STEP 17",
+    "run_idx": 0
+  },
+  {
+    "id": "Q017",
+    "category": "正常",
+    "behavior": "作答",
+    "latency_s": 6.518,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "contextual_precision": 0.5
+    },
+    "passed": true,
+    "actual_output": "默认时长为30秒短视频，默认画幅为横屏16:9。\n\n*   **目标时长**：若用户未指定，默认为30秒短视频（单段视频约4秒）。\n*   **输出画幅**：默认为16:9横版。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q018",
+    "category": "正常",
+    "behavior": "作答",
+    "latency_s": 5.019,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "contextual_precision": 1.0
+    },
+    "passed": true,
+    "actual_output": "默认生成 **3 张**独立锚定照片。\n\n不再使用四宫格的原因：视频模型可能会将四宫格的版式复制进最终成片中，影响画面质量。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q019",
+    "category": "正常",
+    "behavior": "作答",
+    "latency_s": 0.578,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "meta.yaml",
+      "meta.yaml"
+    ],
+    "metrics": {
+      "answer_relevancy": 0.0,
+      "faithfulness": 0.0,
+      "contextual_precision": 0
+    },
+    "passed": false,
+    "actual_output": "根据现有资料无法回答。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q020",
+    "category": "正常",
+    "behavior": "作答",
+    "latency_s": 9.48,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 0.5714285714285714,
+      "faithfulness": 0.6666666666666666,
+      "contextual_precision": 0.5
+    },
+    "passed": true,
+    "actual_output": "15 秒影片建议 5-8 个主要节拍；30 秒影片建议 8-12 个主要节拍。\n\n补充要点：\n1. 若按“步骤 6”的分镜表规则，15 秒通常对应 4 个镜头，30 秒通常对应 5-6 个镜头（每个镜头解释一个知识节拍）。\n2. 若按“步骤 5”的精确节拍规划，也可参考更宽泛的建议：15 秒建议 6-9 个节拍，10 秒建议 5-7 个节拍。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q021",
+    "category": "模糊",
+    "behavior": "澄清",
+    "latency_s": 2.087,
+    "retrieval_hit": 0.0,
+    "sources": [
+      "meta.yaml",
+      "SKILL.cn.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "behavior": 0.0
+    },
+    "passed": false,
+    "actual_output": "根据现有资料无法回答。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q022",
+    "category": "模糊",
+    "behavior": "澄清",
+    "latency_s": 0.458,
+    "retrieval_hit": 0.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "behavior": 0.0
+    },
+    "passed": false,
+    "actual_output": "根据现有资料无法回答",
+    "run_idx": 0
+  },
+  {
+    "id": "Q023",
+    "category": "模糊",
+    "behavior": "澄清",
+    "latency_s": 4.253,
+    "retrieval_hit": 0.0,
+    "sources": [
+      "h3-confirmation-image-template.md",
+      "h3-confirmation-image-template.md",
+      "h3-video-prompt-template.md"
+    ],
+    "metrics": {
+      "behavior": 0.2
+    },
+    "passed": false,
+    "actual_output": "可以，但人物面部需按照指定的视觉风格重新设计。\n\n*   **保留身份锚点**：明确要求“不要丢失角色的身份锚点”且“不要与其他角色互换身份”。\n*   **面部重绘要求**：虽然保留身份，但面部渲染、眼睛设计、鼻子简化、嘴型、皮肤处理、表情风格和头部比例都必须遵循新的 `{visual_style}`。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q024",
+    "category": "模糊",
+    "behavior": "澄清",
+    "latency_s": 8.671,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "meta.yaml",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "behavior": 0.0
+    },
+    "passed": false,
+    "actual_output": "系统将自动采用**“多分镜（Multi-Shot）拼接工作流”**来生成这条 30 秒 MV，具体流程如下：\n\n1. **音乐锁定**：确认你上传的音乐窗口长度为 30 秒，作为生成的基准时长。\n2. **分镜拆解与生成**：由于模型单次生成上限为 15 秒，系统会将 30 秒歌曲拆解为 4~8 个 2~5 秒的动态分镜头进行独立生成或锁定。\n3. **无缝拼接合成**：通过卡拍（Beat-Sync）以及首尾帧/场景连续性控制，将各分镜头拼接合成为一条完整的 MV。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q025",
+    "category": "模糊",
+    "behavior": "澄清",
+    "latency_s": 1.998,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "meta.yaml",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "behavior": 0.3
+    },
+    "passed": false,
+    "actual_output": "根据现有资料无法回答。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q026",
+    "category": "模糊",
+    "behavior": "作答",
+    "latency_s": 8.918,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "contextual_precision": 1.0
+    },
+    "passed": true,
+    "actual_output": "无法直接确定最终规格，需您确认以下核心参数：\n\n1. **画面尺寸/比例**：请从 16:9（横屏）、9:16（竖屏短视频）、1:1（方形）、4:5（社媒竖图）或自定义中选择。\n2. **总时长**：请从 30–60 秒（推荐）、15–30 秒、60–90 秒、90–180 秒或自定义中选择。\n\n只有同时明确这两项，才能进入下一步制作流程。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q027",
+    "category": "多跳",
+    "behavior": "作答",
+    "latency_s": 0.532,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 0.0,
+      "faithfulness": 0.0,
+      "contextual_precision": 0
+    },
+    "passed": false,
+    "actual_output": "根据现有资料无法回答",
+    "run_idx": 0
+  },
+  {
+    "id": "Q028",
+    "category": "多跳",
+    "behavior": "作答",
+    "latency_s": 4.433,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "contextual_precision": 1.0
+    },
+    "passed": true,
+    "actual_output": "整体使用**中文**。\n\n*   **主语言规则**：最终 prompt 的语言必须跟随用户输入的主语言（此处为中文）。\n*   **模型名处理**：MiniMax H3 属于“模型名”，可以原样保留，无需翻译。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q029",
+    "category": "多跳",
+    "behavior": "作答",
+    "latency_s": 5.662,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "contextual_precision": 1.0
+    },
+    "passed": true,
+    "actual_output": "核心结论：应采用**空间与转场衔接锁**中的“长镜头延伸”方法。具体操作是使用上一镜头（镜头A）的末帧作为下一镜头（镜头B）的首帧输入，并在 Prompt 中加上 `continuation of action`。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q030",
+    "category": "多跳",
+    "behavior": "作答",
+    "latency_s": 4.909,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "contextual_precision": 1.0
+    },
+    "passed": true,
+    "actual_output": "在白色科技风中，结尾单行文案的颜色应拆分为两段：前半段使用黑色或深灰（禁止使用白色），后半段使用具体商品色（即紫色）。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q031",
+    "category": "多跳",
+    "behavior": "作答",
+    "latency_s": 6.541,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "meta.yaml",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "contextual_precision": 0.3333333333333333
+    },
+    "passed": false,
+    "actual_output": "根据上下文，不同产品类型对应的叙事脊柱如下：\n\n*   **AI / SaaS**：用户意图 -> 思考或规划 -> 能力 -> 执行 -> 有用输出 -> 证明 -> LOGO\n*   **实体产品**：英雄展示 -> 交互 -> 功能特写 -> 使用场景 -> 结果 -> LOGO",
+    "run_idx": 0
+  },
+  {
+    "id": "Q032",
+    "category": "多跳",
+    "behavior": "作答",
+    "latency_s": 2.153,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 0.0,
+      "faithfulness": 1.0,
+      "contextual_precision": 1.0
+    },
+    "passed": false,
+    "actual_output": "根据现有资料无法回答。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q033",
+    "category": "对抗",
+    "behavior": "作答",
+    "latency_s": 4.413,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "meta.yaml"
+    ],
+    "metrics": {
+      "answer_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "contextual_precision": 1.0
+    },
+    "passed": true,
+    "actual_output": "不可以。根据上下文规定，该 Skill **不适用于恐怖跳吓**，且生成时需检查并避免**非恐怖调性**。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q034",
+    "category": "对抗",
+    "behavior": "作答",
+    "latency_s": 10.708,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "fallback-policy.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "contextual_precision": 1.0
+    },
+    "passed": true,
+    "actual_output": "不对。根据上下文，快节奏 MV（如 Trap、Dark-pop）的转应强调**硬切**与**视觉采样**，而非柔和过渡。\n\n1. **推荐硬切技术**：镜头切换应采用“硬切、跳切、扫描 glitch 硬切、闪切、动作匹配切”等具有冲击力的方式，以配合 bass hit、808 drop 等音乐重音。\n2. **禁止无意义特效**：明确反对使用“无意义闪白、抽象粒子、随机光效或随机切镜来假装高级”，淡入淡出和溶解属于此类缺乏真实驱动力的柔和过渡，不符合规则。\n3. **转场需由真实元素驱动**：转场应由产品边缘、材质高光、开合/旋转等真实动作或几何变化驱动，确保每个节拍只保留一个主要动作，避免画面混乱。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q035",
+    "category": "对抗",
+    "behavior": "作答",
+    "latency_s": 9.204,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "contextual_precision": 1.0
+    },
+    "passed": true,
+    "actual_output": "不对。Apple 风中产品本体的颜色是硬保真约束，绝不能擅自重染为白色、银灰或通用色盘。\n\n*   **保留原貌**：必须严格保留用户原图中产品的本体颜色、点缀色、材质色相和可见表面质感。\n*   **仅限环境调整**：只有背景、光线环境和构图可以转向 Apple 风模板，除非用户明确要求，否则不得改变产品本身的颜色。\n*   **文案配色限制**：最终强调的文案颜色也必须来自产品真实主色，禁止使用通用的银灰或白色作为产品主色调。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q036",
+    "category": "对抗",
+    "behavior": "拒答",
+    "latency_s": 2.01,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "behavior": 1.0
+    },
+    "passed": true,
+    "actual_output": "根据现有资料无法回答",
+    "run_idx": 0
+  },
+  {
+    "id": "Q037",
+    "category": "对抗",
+    "behavior": "拒答",
+    "latency_s": 9.737,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "behavior": 1.0
+    },
+    "passed": true,
+    "actual_output": "根据现有资料无法回答。\n\n**核心结论：**\n严禁使用未经授权的素材，包括不得重绘、近似或生成与知名品牌相似的 LOGO。\n\n**补充说明：**\n1. **禁止仿制**：规则明确指出“不得重绘或近似 LOGO”，且“绝不优化仿制品”。\n2. **来源限制**：LOGO 和带身份识别的资产必须来自已验证或用户授权的来源，不得使用 AI 生成替代品、粉丝重绘或非官方聚合站素材。\n3. **合规要求**：若缺乏授权素材，应停止制作并向用户索取官方资产，而非自行绘制近似 LOGO。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q038",
+    "category": "对抗",
+    "behavior": "作答",
+    "latency_s": 5.179,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "meta.yaml",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "contextual_precision": 1.0
+    },
+    "passed": true,
+    "actual_output": "不会。根据上下文，该技能明确**不适合**复杂文字排版或包含 Logo/水印的内容生成，且默认规则要求避免在图像/视频中添加可读字母、数字、UI、字幕、水印和 Logo。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q039",
+    "category": "越界",
+    "behavior": "拒答",
+    "latency_s": 1.615,
+    "retrieval_hit": 0.0,
+    "sources": [
+      "SKILL.cn.md",
+      "base-en.txt",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "behavior": 1.0
+    },
+    "passed": true,
+    "actual_output": "根据现有资料无法回答",
+    "run_idx": 0
+  },
+  {
+    "id": "Q040",
+    "category": "越界",
+    "behavior": "拒答",
+    "latency_s": 1.796,
+    "retrieval_hit": 0.0,
+    "sources": [
+      "SKILL.cn.md",
+      "base-en.txt",
+      "base-en.txt"
+    ],
+    "metrics": {
+      "behavior": 1.0
+    },
+    "passed": true,
+    "actual_output": "根据现有资料无法回答",
+    "run_idx": 0
+  },
+  {
+    "id": "Q041",
+    "category": "越界",
+    "behavior": "拒答",
+    "latency_s": 1.928,
+    "retrieval_hit": 0.0,
+    "sources": [
+      "h3-video-prompt-template.md",
+      "h3-confirmation-image-template.md",
+      "h3-video-prompt-template.md"
+    ],
+    "metrics": {
+      "behavior": 1.0
+    },
+    "passed": true,
+    "actual_output": "根据现有资料无法回答",
+    "run_idx": 0
+  },
+  {
+    "id": "Q042",
+    "category": "越界",
+    "behavior": "拒答",
+    "latency_s": 5.547,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "meta.yaml",
+      "SKILL.cn.md",
+      "meta.yaml"
+    ],
+    "metrics": {
+      "behavior": 1.0
+    },
+    "passed": true,
+    "actual_output": "根据现有资料无法回答。\n\n**理由：**\n上下文明确指出，该“双人游戏开场视频生成器”**不适用于完整可玩游戏开发**。其功能仅限于制作包含角色、玩家信息卡和主菜单交互动效的开场视频，适用于概念展示或社交内容，而非实际的游戏程序开发。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q043",
+    "category": "越界",
+    "behavior": "拒答",
+    "latency_s": 2.518,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "behavior": 1.0
+    },
+    "passed": true,
+    "actual_output": "根据现有资料无法回答。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q044",
+    "category": "越界",
+    "behavior": "拒答",
+    "latency_s": 5.843,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "README.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "behavior": 1.0
+    },
+    "passed": true,
+    "actual_output": "根据现有资料无法回答。\n\n**原因：**\n1. **极简产品广告生成器**明确说明“不适合 KOC 口播”。\n2. **手绘实拍视频生成器**适用于“手绘动画与实拍空间融合”，且不适用于“精致CG”等，其核心是手绘风格而非真人写实口播。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q045",
+    "category": "追问",
+    "behavior": "作答",
+    "latency_s": 7.095,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "meta.yaml"
+    ],
+    "metrics": {
+      "answer_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "contextual_precision": 0.8333333333333333
+    },
+    "passed": true,
+    "actual_output": "根据上下文，流程上**先生成角色卡（STEP 3），后生成场景卡（STEP 4）**。\n\n*   **步骤顺序明确**：文档将“角色卡”列为 STEP 3，“场景卡”列为 STEP 4，且明确指出“在角色卡之后生成场景参考卡”。\n*   **内容侧重不同**：角色卡用于确立主角及配角的视觉细节（如三视图、服装道具），而场景卡仅展示环境（不含人物），两者需按此顺序配合以确保后续镜头的一致性。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q046",
+    "category": "追问",
+    "behavior": "作答",
+    "latency_s": 7.31,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "contextual_precision": 1.0
+    },
+    "passed": true,
+    "actual_output": "结尾（后半段）文字颜色必须使用**紫色**（即产品的真实主色）。\n\n补充说明：\n1. **前半段颜色**：由于背景为白色科技风，文字前半段必须使用黑色或深灰，禁止使用白色。\n2. **整体限制**：单镜头内文字颜色总共不超过两种（黑/深灰 + 紫色），且文案需保持单行、不换行。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q047",
+    "category": "追问",
+    "behavior": "作答",
+    "latency_s": 9.632,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 1.0,
+      "faithfulness": 0.75,
+      "contextual_precision": 1.0
+    },
+    "passed": true,
+    "actual_output": "对于超过 15 秒（如 30 秒）的 MV，系统默认采用**“多分镜（Multi-Shot）拼接工作流”**进行处理。\n\n核心处理方式如下：\n1. **拆解与生成**：将 30 秒视频拆解为 4~8 个 2~5 秒的动态分镜头进行单独生成。\n2. **无缝拼接**：通过卡拍（Beat-Sync）以及首尾帧/场景连续性控制，将这些分镜头拼接合成为完整的 MV。\n3. **权威来源**：必须以“全局多镜头分镜 Prompt 脚本”作为生成的权威依据。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q048",
+    "category": "追问",
+    "behavior": "作答",
+    "latency_s": 7.05,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "meta.yaml",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "contextual_precision": 0.8333333333333333
+    },
+    "passed": true,
+    "actual_output": "最终 prompt 的语言必须跟随用户输入的主语言（即中文）。\n\n*   **核心规则**：只有用户要求保留的专名、模型名或字面参数可以原样保留，其余内容需翻译为用户主导的语言。\n*   **具体应用**：MiniMax H3 作为模型名称属于可保留的专有名词/参数，因此在该部分保留英文 \"MiniMax H3\"，但描述该步骤的其他文字（如“建议使用...”、“用户确认后...”等）必须使用中文。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q049",
+    "category": "追问",
+    "behavior": "作答",
+    "latency_s": 3.72,
+    "retrieval_hit": 1.0,
+    "sources": [
+      "SKILL.cn.md",
+      "SKILL.cn.md",
+      "SKILL.cn.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "contextual_precision": 0.8333333333333333
+    },
+    "passed": true,
+    "actual_output": "30 秒的视频通常包含 **5-6 个镜头**。",
+    "run_idx": 0
+  },
+  {
+    "id": "Q050",
+    "category": "追问",
+    "behavior": "作答",
+    "latency_s": 6.493,
+    "retrieval_hit": 0.0,
+    "sources": [
+      "h3-confirmation-image-template.md",
+      "h3-video-prompt-template.md",
+      "h3-video-prompt-template.md"
+    ],
+    "metrics": {
+      "answer_relevancy": 1.0,
+      "faithfulness": 1.0,
+      "contextual_precision": 1.0
+    },
+    "passed": true,
+    "actual_output": "不会。上传的角色参考图仅用于身份映射（如面部轮廓、发型、眼镜等特征），不包含或传递真实世界的摄影质感。\n\n*   **明确排除项**：上下文规定，参考图不捐赠“photographic realism”（照片级写实感）、“real skin texture”（真实皮肤纹理）、“real-world lighting”（现实世界光照）以及“camera quality”（相机画质）。\n*   **实际用途**：图片仅作为身份锚点，确保角色特征识别度；最终的视觉风格、光影和质感将根据设定的 `{visual_style}` 进行动态优化。",
+    "run_idx": 0
+  }
+]
